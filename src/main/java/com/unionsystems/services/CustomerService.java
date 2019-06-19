@@ -20,8 +20,8 @@ public class CustomerService {
     }
 
     public Customer getCustomerById(Long customerId){
-        Customer employee = customerRepository.findOne(customerId);
-        return employee;
+        Customer customer = customerRepository.findOne(customerId);
+        return customer;
     }
 
     public Customer addCustomer(Customer customer) {
